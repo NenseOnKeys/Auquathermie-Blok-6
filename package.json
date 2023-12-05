@@ -1,5 +1,5 @@
 {
-  "name": "auth0-nextjs-sample",
+  "name": "aquathermie-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -41,7 +41,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.1.0",
     "babel-jest": "^29.7.0",
-    "cypress": "^12.7.0",
+    "cypress": "^13.6.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
@@ -73,5 +73,12 @@
       "text",
       "text-summary"
     ]
-  }
+  },
+  "description": "This sample demonstrates the integration of [Auth0 Next.js SDK](https://github.com/auth0/nextjs-auth0) into a Next.js application created using [create-next-app](https://nextjs.org/docs/api-reference/create-next-app). The sample is a companion to the [Auth0 Next.js SDK Quickstart](https://auth0.com/docs/quickstart/webapp/nextjs).",
+  "main": "api-server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "author": "",
+  "license": "ISC"
 }
