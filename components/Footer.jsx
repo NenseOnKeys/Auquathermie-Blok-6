@@ -1,10 +1,12 @@
 import React from 'react';
+import Logo from "./Logo";
 
 const Footer = () => (
   <footer className="bg-light p-3 text-center" data-testid="footer">
-    <div className="logo" data-testid="footer-logo" />
+      <Logo testId="hero-logo" />
+    <div className="" data-testid="footer-logo" />
     <p data-testid="footer-text">
-      Sample project provided by <a href="https://auth0.com">Auth0</a>
+      Dit is een project van  <a href="https://www.s-hertogenbosch.nl/">'S-Hertogenbosch</a>
     </p>
   </footer>
 );

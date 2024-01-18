@@ -9,7 +9,7 @@ export default withPageAuthRequired(
     return (
       <>
         <div className="mb-5" data-testid="ssr">
-          <h1 data-testid="ssr-title">Server-side Rendered Page</h1>
+          <h1 data-testid="ssr-title">Data</h1>
           <div data-testid="ssr-text">
             <p>
               You can protect a server-side rendered page by wrapping it with <code>withPageAuthRequired</code>. Only

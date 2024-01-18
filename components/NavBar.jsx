@@ -1,3 +1,5 @@
+import Logo from "./Logo";
+
 'use  client';
 
 import React, { useState } from 'react';
@@ -28,7 +30,8 @@ const NavBar = () => {
     <div className="nav-container" data-testid="navbar">
       <Navbar color="light" light expand="md">
         <Container>
-          <NavbarBrand className="logo" />
+          <Logo testId="hero-logo" />
+          {/*<NavbarBrand testId="hero-logo" />*/}
           <NavbarToggler onClick={toggle} data-testid="navbar-toggle" />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="mr-auto" navbar data-testid="navbar-items">
@@ -41,19 +44,19 @@ const NavBar = () => {
                 <>
                   <NavItem>
                     <PageLink href="/csr" className="nav-link" testId="navbar-csr">
-                      Client-side rendered page
+                      Logs
                     </PageLink>
                   </NavItem>
                   <NavItem>
                     <PageLink href="/ssr" className="nav-link" testId="navbar-ssr">
-                      Server-side rendered page
+                      Data
                     </PageLink>
                   </NavItem>
-                  <NavItem>
-                    <PageLink href="/external" className="nav-link" testId="navbar-external">
-                      External API
-                    </PageLink>
-                  </NavItem>
+                  {/*<NavItem>*/}
+                  {/*  <PageLink href="/external" className="nav-link" testId="navbar-external">*/}
+                  {/*    External API*/}
+                  {/*  </PageLink>*/}
+                  {/*</NavItem>*/}
                 </>
               )}
             </Nav>
