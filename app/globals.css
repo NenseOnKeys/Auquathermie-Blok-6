@@ -1,6 +1,9 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
 }
 
 code {
@@ -37,3 +40,65 @@ p code {
 .result-block-container .result-block {
   opacity: 1;
 }
+
+
+
+.chartContainer {
+  position: absolute;
+  top: 25%;
+  left: calc(50% - 40%);
+  width: 80%;
+  min-height: 300px;
+  min-width: 550px;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chartContainer > div {
+  display: flex;
+  flex-basis: calc(50% - 40px); /* Ensure there's a space around the subtraction operator */
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.box {
+  margin: 10px;
+  width: calc(50% - 40px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box1 {
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.box2 {
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.box3 {
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+.box4 {
+  box-shadow: 1px 1px 10px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .chartContainer {
+    
+  }
+
+  .chartContainer > div {
+    flex-basis: 90%; /* Set full width for mobile view */
+  }
+}
+
+

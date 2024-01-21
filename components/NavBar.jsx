@@ -39,6 +39,9 @@ const NavBar = () => {
                 <PageLink href="/" className="nav-link" testId="navbar-home">
                   Home
                 </PageLink>
+                <PageLink href="/dashboard" className="nav-link" testId="navbar-dashboard">
+                  Dashboard
+                </PageLink>
               </NavItem>
               {user && (
                 <>
